@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Erik-education/static/css/main.46b926cc.css",
-    "main.js": "/Erik-education/static/js/main.540f6d70.js",
+    "main.js": "/Erik-education/static/js/main.43750105.js",
     "index.html": "/Erik-education/index.html",
     "main.46b926cc.css.map": "/Erik-education/static/css/main.46b926cc.css.map",
-    "main.540f6d70.js.map": "/Erik-education/static/js/main.540f6d70.js.map"
+    "main.43750105.js.map": "/Erik-education/static/js/main.43750105.js.map"
   },
   "entrypoints": [
     "static/css/main.46b926cc.css",
-    "static/js/main.540f6d70.js"
+    "static/js/main.43750105.js"
   ]
 }
