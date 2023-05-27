@@ -11,7 +11,7 @@ export default function Subject() {
     <div className="subject">
     <Box 
       p="4"
-      mt={{ sm: '3rem', md: '8rem' }}
+      mt={{ sm: '0rem', md: '1rem' }}
       mb={{ sm: '3rem', md: '8rem' }}
       maxW="1200px"
       mx="auto"

@@ -1,5 +1,6 @@
 {
   "name": "my-app",
+  "homepage": "https://www.erikt-education.hk",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

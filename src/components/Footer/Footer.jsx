@@ -1,5 +1,7 @@
-import { Box, Image, GridItem, Flex, Link } from '@chakra-ui/react';
+import { Box, Image, GridItem, Flex } from '@chakra-ui/react';
 import './footer.css';
+import { Link } from 'react-router-dom';
+
 export default function Footer() {
   const breakpoints = {
     sm: '23em', // 480px
@@ -8,6 +10,7 @@ export default function Footer() {
     xl: '80em', // 1280px
     '2xl': '96em', // 1536px
   };
+
   return (
     <footer className="footer">
       <Box
@@ -17,12 +20,14 @@ export default function Footer() {
         flexDirection={{ base: 'column', md: 'row' }}
         maxW="1200px"
         mx="auto"
+        color="white"
       >
    
         <Box flex="1" maxW="200px">
           <GridItem pl="2" mb="4">
             <Image
-              src="/images/logo.svg"
+            src={`${process.env.PUBLIC_URL}/logo.svg`}
+         
               alt="Erik-t-education.hk-logo"
               height="3rem"
               mb="3rem"
@@ -33,23 +38,23 @@ export default function Footer() {
         <Flex flexDirection="column" flex="1" mr={{ base: '0', md: '4' }}>
           <GridItem pl="2" textAlign="left" mb="4">
             <Box mb="2">
-              <Link href="/.">Home</Link>
+              <Link to="/">Home</Link>
             </Box>
             <Box mb="2">
-              <Link href="/profile">About Erik</Link>
+              <Link to="/profile">About Erik</Link>
             </Box>
             <Box mb="2">
-              <Link href="/subject">Subjects</Link>
+              <Link to="/subject">Subjects</Link>
             </Box>
             <Box mb="2">
-              <Link href="/student">Students achievement</Link>
+              <Link to="/student">Students achievement</Link>
             </Box>
           </GridItem>
         </Flex>
 
         <Box flex="1" mr={{ base: '0', md: '4' }}>
           <GridItem pl="2" textAlign="left">
-            <p>© 2022 Erik-t Education</p>
+            <p>©2023 Erik-t Education</p>
           </GridItem>
         </Box>
       </Box>

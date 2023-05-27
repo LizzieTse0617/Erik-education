@@ -50,12 +50,13 @@ const Navbar = () => {
               )}
             </Button>
             <Box>
+              <Link to="/">
               <Image
-                src="../../../public/logo.svg"
+src={`${process.env.PUBLIC_URL}/logo.svg`}
                 height="3rem"
         
                 alt="erikt-education"
-              />
+              /></Link>
             </Box>
           </Flex>
 

@@ -14,8 +14,8 @@ export default function Introduction() {
   return (
     <div className="introduction">
       <Box
-        mt={{ sm: '3rem', md: '8rem' }}
-        mb={{ sm: '3rem', md: '8rem' }}
+        mt={{ sm: '0rem', md: '0rem' }}
+        mb={{ sm: '0rem', md: '0rem' }}
         display="flex"
         flexDirection={{ base: 'column', md: 'row' }}
         alignItems="center"
@@ -59,7 +59,8 @@ export default function Introduction() {
         <Box flex="1" maxW="400px">
           <GridItem pl="0" area={'img'} m="5">
             <Image
-              src="/images/erik_logo.png"
+src={`${process.env.PUBLIC_URL}/erik_logo.png`}
+
               alt="Erik-t-education.hk-logo"
               height="200px"
             />

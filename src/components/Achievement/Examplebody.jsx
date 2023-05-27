@@ -39,7 +39,7 @@ export default function Examplebody() {
           mb="4"
           fontWeight="600"
           borderBottom="1px"
-          pt={{ sm: '3rem', md: '4rem', lg: '5rem' }}
+          pt={{ sm: '0rem', md: '2rem', lg: '3rem' }}
         >
           AP Examination
         </Text>
@@ -168,7 +168,9 @@ export default function Examplebody() {
       {/* Level 5 */}
       <GridItem gridArea={{ sm: "lv5", md: "lv5" }}>
       <Image
-                  src="/images/lv5.svg"
+      src={`${process.env.PUBLIC_URL}/lv5.svg`}
+
+                
                   alt="Erik-t-education.hk-level5-icon"
                   height="1.2rem"
                 />
@@ -182,7 +184,8 @@ export default function Examplebody() {
       {/* Level 4 */}
       <GridItem gridArea={{ sm: "lv4", md: "lv4" }}>
       <Image
-                  src="/images/lv4.svg"
+        src={`${process.env.PUBLIC_URL}/lv4.svg`}
+
                   alt="Erik-t-education.hk-level4-icon"
                   height="1.2rem"
                 />
